@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Login</title>
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <div class="accounts">
+           
+            <div class="account">
+              <form class="site-form" action="{%url 'user:login'%}" method="post">
+                {%csrf_token%}
+                {{form}}
+                <input type="submit" value="Login">
+              </form>
+            </div>
+
+        </div>
+    </body>
+</html>
